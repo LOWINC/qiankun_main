@@ -1,9 +1,10 @@
 import "lib-flexible";
 import React, {useEffect} from "react";
 import {Provider} from "react-redux";
+import "whatwg-fetch";
 import pkg from "../package.json";
 import {Router} from "./route";
-import {store, history} from "./store";
+import {history, store} from "./store";
 
 console.log(`${pkg.name} v${pkg.version}`);
 
