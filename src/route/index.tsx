@@ -11,10 +11,6 @@ const routes: any[] = [
     component: React.lazy(() => import("../pages/qiankun")),
   },
   {
-    path: "/profile",
-    component: React.lazy(() => import("../pages/profile")),
-  },
-  {
     path: "/",
     exact: true,
     component: React.lazy(() => import("../pages/index")),
@@ -22,7 +18,7 @@ const routes: any[] = [
 ];
 
 function preHandler(meta: any) {
-  document.title = get(meta, "title", "xxx");
+  document.title = get(meta, "title", "main");
 }
 
 export const Router = ({history}: any) => {
